@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-2.1.4.js" data-semver="2.1.4" data-require="jquery@*"></script>
+  <script src="https://cdn.rawgit.com/jquery/esprima/2.7.1/esprima.js"></script>
+  <script src="testingAPI.js"></script>
+  <script src="script.js"></script>
+
+  <style type="text/css" media="screen">
+    #editor {
+      position: relative;
+      height: 200px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Code Analyzer!</h1>
+  <p>Type code in here:</p>
+  <div id="editor"></div>
+
+  <p>Feedback:</p>
+  <div>
+    <ul id="feedback">
+      <li id="output"></li>
+    </ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/textmate");
+    editor.getSession().setMode("ace/mode/javascript");
+  </script>
+
+
+
+
+</body>
+
+</html>
